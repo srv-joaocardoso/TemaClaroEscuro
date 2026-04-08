@@ -1,0 +1,66 @@
+:root {
+    --black: #1d4ed8;
+    --white: #fff;
+    --green: #000;
+}
+
+body {
+    font-family: helvetica;
+    background: var(--bg);
+    color: var(--fontColor);
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    border: none;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    padding: 24px 16px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 420px;
+}
+
