@@ -1,7 +1,7 @@
 :root {
-    --black: #1d4ed8;
+    --blue: #1d4ed8;
     --white: #fff;
-    --green: #000;
+    --black: #000;
 }
 
 body {
@@ -27,8 +27,41 @@ li {
     font-family: monospace;
 }
 
+.task-input {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--fontColor);
+    font-size: 1rem;
+    outline: none;
+}
+
+.task-input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.add-btn {
+    margin-left: 12px;
+    padding: 14px 22px;
+    border-radius: 16px;
+    border: none;
+    background: var(--white);
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.add-btn:hover {
+    filter: brightness(0.95);
+}
+
 .light-theme {
-    --bg: var(--green);
+    --bg: var(--blue);
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
@@ -36,7 +69,7 @@ li {
 
 .dark-theme {
     --bg: var(--black);
-    --fontColor: var(--green);
+    --fontColor: var(--blue);
     --btnBg: var(--white);
     --btnFontColor: var(--black);
 }
